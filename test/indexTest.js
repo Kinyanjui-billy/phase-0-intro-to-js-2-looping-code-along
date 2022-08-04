@@ -48,3 +48,15 @@ describe( 'index.js', () => {
     } );
   } );
 } );
+const names = []
+function writeCards(names,event) {
+  for (let i = 0; i < names.length; i++) {
+    console.log('Thank you, ${names[i]} for the wonderful $(event) gift!`);
+    return names;
+  }
+}
+const names = ["Joe","Nina"]
+function writeCards(names, event) {
+return names.map(name `Thank you, ${name} for the wonderful ${event} gift!`)
+}
+console.log(writeCards(names, "birthday"))
